@@ -17,7 +17,6 @@ Baudrates must be one of the baudrates specified in `man 3 termios`, ignoring pl
 #### Arguments
 Options can be used together in any order. Note that `-r` will fail if `-d` is unspecified or can't be opened.
 
-Examples:
 ```sh
 $ tuiser -h
 $ tuiser -m graph
