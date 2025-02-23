@@ -2,8 +2,6 @@
 
 `tuiser` is a TUI SERial monitor for Linux.
 
-## Usage
-
 The device file descriptor, baudrate, monitoring state, and display mode can be set in the program or as program arguments.
 
 Baudrates must be one of the baudrates specified in `man 3 termios`, ignoring platform-specific or non-POSIX options.
@@ -13,6 +11,15 @@ Baudrates must be one of the baudrates specified in `man 3 termios`, ignoring pl
 - ^Z -- Change display mode
 - ^X -- Toggle monitoring
 - ^C -- Quit
+
+#### Display modes
+- `char` (default) -- ASCII text
+- `graph` -- 2d graph of signed byte value over time
+- `hex` -- Unsigned hexadecimal 
+- `uint` -- Unsigned decimal
+- `int` -- Signed decimal
+
+`hex`, `uint`, and `int` write bytes in a 16-column grid, left to right, top to bottom.
 
 #### Arguments
 Options can be used together in any order. Note that `-r` will fail if `-d` is unspecified or can't be opened.
