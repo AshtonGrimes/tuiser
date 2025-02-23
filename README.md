@@ -2,9 +2,11 @@
 
 `tuiser` is a TUI SERial monitor for Linux.
 
-The device file descriptor, baudrate, monitoring state, and display mode can be set in the program or as program arguments.
+File descriptors, baudrates, display modes can be set as program arguments or at any time in the interface.
 
-Baudrates must be one of the baudrates specified in `man 3 termios`, ignoring platform-specific or non-POSIX options.
+Baudrates must be one of the baudrates specified in `man 3 termios`, ignoring platform-specific or non-POSIX options. Check the BAUD_MAP values in the source code for an exhaustive list.
+
+## Usage
 
 #### Shortcuts
 - ^W, ^A, ^S, ^D -- Move cursor
