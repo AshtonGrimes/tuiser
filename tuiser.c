@@ -41,8 +41,8 @@ const uint NUM_MODES = 5;
 
 const char *OPTS_HELP = "\n"    
 "Options:\n"
-"    -b | --baud <baud>     Set initial baud\n"
-"    -d | --device <path>   Set initial baud\n"
+"    -b | --baud <baud>     Set baud\n"
+"    -d | --device <path>   Set device path\n"
 "    -h | --help            Display this help message\n"
 "    -m | --mode <mode>     Set monitor mode: char (default), graph, hex, uint, int\n"
 "    -r | --read            Immediately read device (specified with -d)\n"
